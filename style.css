@@ -1,0 +1,110 @@
+  @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@300&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#407088;
+}
+nav{
+    background-color:#132743;
+    color:#bbe9db;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+
+}
+nav ul{
+    list-style-type: none;
+}
+.about{
+    margin-left: 80%;
+}
+.about:hover{
+    border: 2px solid #66bfbf;
+}
+.gameContainer{
+    background-color:#66bfbf;
+    display: flex;
+    justify-content: center;
+    margin: 70px 219px;
+    border-radius: 10px;
+} 
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw) ;
+    grid-template-columns: repeat(3,10vw) ;
+    font-family:'Edu TAS Beginner', cursive ;
+}
+.box{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #e9d6d6;
+    border-radius: 20px;
+}
+.gameInfo{
+    padding: 0 40px;
+}
+.info{
+    font-size: 25px;
+}
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    background-color: black;
+    color: white;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0px 20px;
+    background-color:#e9d6d6;
+    color: black;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 3px 4px;
+    border-radius: 7px;
+}
+@media(max-width: 500px)
+{
+.gameContainer{
+ flex-wrap: wrap;
+}
+.gameInfo{
+ margin-top: 35px;
+}
+.info{
+    font-size: medium;
+    font-family: cursive;
+}
+.gameInfo h1{
+    font-size: 1.5rem;
+    font-family: cursive;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    font-size: 20px;
+}
+}
